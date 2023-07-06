@@ -18,10 +18,10 @@ export default function Leaderboard({numberFilter, setNumberFilter}) {
       });
   }, [numberFilter]);
 
-  if (profiles.length === 0) {
+  if (profiles.length===0) {
     return( 
       <div className="loading">
-        <img src="/images/orangehacklogo.svg" alt="Orange HackIllinois Logo"/>
+        <h1>Loading...</h1>
       </div>
     )
   }
