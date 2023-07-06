@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React, {useState} from "react"
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import './App.css';
+import Leaderboard from './Components/Leaderboard';
+import Navbar from "./Components/Navbar";
 
-function App() {
+export default function App() {
+  const [numberFilter, setNumberFilter] = useState("")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <Routes>
+          <Route
+          path="/"
+          element={
+            <div className="home">
+              <Navbar numberFilter={numberFilter} setNumberFilter={setNumberFilter}/>
+              <Leaderboard numberFilter={numberFilter} setNumberFilter={setNumberFilter}/>
+            </div>
+          }
+          />
+      </Routes>
+    </Router>
+  )
 }
 
-export default App;
