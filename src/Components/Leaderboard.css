@@ -21,23 +21,23 @@
 .leaderboard table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #FCF5DB;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 20px rgba(13, 56, 124, 0.6);
     position: relative;
 }
 
 .leaderboard thead tr th {
-    background-blend-mode: overlay;
-    background-color: #FCF5DB;
-    color: #333;
-    border: 1px solid #dddddd;
+    color: white;
+    border: 5px solid #FCF5DB;
     padding: 12px;
     font-weight: bold;
     text-align: left;
+    background: linear-gradient(90deg, #fff -7.86%, #fea3aa 63.14%, #f99557 115.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:24px;
 }
 .leaderboard thead tr th img {
     width:10%;
-    background-color: #FCF5DB;
 }
 .discord {
     display: flex;
@@ -47,26 +47,16 @@
 .leaderboard tbody tr td {
     border: 1px solid #dddddd;
     padding: 12px;
-    font-weight: bold;
-}
-  
-.leaderboard tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-    background-blend-mode: overlay;
+    font-weight: lighter;
 }
   
 .leaderboard tbody tr:hover {
     background-color: #ebebeb;
     transition: background-color 0.3s ease-in-out;
-    background-color: #FCF5DB;
-    background-blend-mode: overlay;
 }
   
 .leaderboard tbody tr:hover td {
-    color: black;
     transition: background-color 0.3s ease-in-out;
-    background-color: #FCF5DB;
-    background-blend-mode: overlay;
 }
   
 .leaderboard tbody tr:hover {

@@ -30,7 +30,7 @@ export default function Leaderboard({numberFilter, setNumberFilter}) {
       <table className="leaderboard">
         <thead>
           <tr>
-            <th className="discord"><img src="/images/discord_logo.png" alt="Discord Logo"/>Discord</th>
+            <th className="discord">Discord</th>
             <th className="points">Points</th>
           </tr>
         </thead>

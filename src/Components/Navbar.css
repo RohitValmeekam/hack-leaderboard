@@ -24,7 +24,7 @@
 .navbar img {
     width: 10%;
     height: auto;
-    max-width: 100px;
+    max-width: 110px;
     margin-left: -2.5%;
 }
 
@@ -35,16 +35,14 @@
     background: linear-gradient(90deg, #fff -7.86%, #fea3aa 63.14%, #f99557 115.38%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size:200%;
 }
 
-
 .navbar select {
-    background-color: #FCF5DB;
-    background-blend-mode: overlay;
     border: none;
     padding: 8px;
-    font-size: 16px;
-    color: #333333;
+    font-size: 90%;
+    color: white;
     transition: background-color 0.3s ease;
     font-weight: bold;
     border: 3px solid white;
