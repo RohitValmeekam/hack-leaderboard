@@ -4,9 +4,9 @@ import './Leaderboard.css';
 export default function Leaderboard({numberFilter, setNumberFilter}) {
   const [profiles, setProfiles] = useState([]);
   useEffect(() => {
-    let url = "https://api.hackillinois.org/profile/leaderboard/"
+    let url = "https://adonix.hackillinois.org/profile/leaderboard/ "
     if (numberFilter !== '') {
-      url = `https://api.hackillinois.org/profile/leaderboard/?limit=${numberFilter}`
+      url = `https://adonix.hackillinois.org/profile/leaderboard/?limit=${numberFilter}`
     }
     fetch(url)
       .then((response) => response.json())
